@@ -1,0 +1,13 @@
+﻿body{
+	text-align:content;
+}
+#doing{
+	z-index:99;
+	left:0px;
+	top:0px;
+	display:none;
+	width:100%;
+	position:absolute;
+	height:100%;
+	background-color:gray;
+}
