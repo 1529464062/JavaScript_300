@@ -1,0 +1,10 @@
+﻿//window.onload属性是一种事件的回调，它所监听的事件就是网页元素是否加载完毕。
+window.onload=function(){
+	alert("网页加载完毕");
+}
+//文档加载完毕的回调,不包括各种资源，如图片，音频，视频，等等。
+document.onreadystatechange=function(){
+	if(document.readyState=='complete'){
+		alert("文档加载完毕");
+	}
+}
