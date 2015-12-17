@@ -1,0 +1,42 @@
+﻿<html>
+	<head>
+		<script type="text/javascript">
+			window.onload=function(){
+				var time1=new Date().getTime();
+				console.log(time1);
+				var rr=document.getElementById("test");
+				for(var i=0;i<500;i++){
+				
+					rr.innerHTML=rr.innerHTML+"<p>"+i+"</p>";
+					//console.log(document.body.scrollTop);
+					//console.log(rr.offsetHeight);
+				}
+				var time2=new Date().getTime();
+				console.log(time2);
+				console.log(time2 - time1);
+				document.getElementById("goTop").addEventListener('click',function(){document.body.scrollTop=0;document.getElementById("goTop").className="hidden"});
+				
+			}
+			
+		</script>
+		<style>
+			#goTop{
+				width:50px;
+				height:50px;
+				background-color:#223344;
+				position:fixed;
+				right:0;
+				bottom:0;
+			}
+			.hidden{
+				visible:hidden;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="test"></div>
+		<span id="goTop"></span>
+	</body>
+	
+</html>
